@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox items </title>
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+
+            .flex-container{
+                display: flex;
+                padding: 20px;
+                background-color: #025955;
+                border-radius: 10px;
+            }
+
+            .flex-item{
+                padding: 60px 15px;
+                background-color: #FDE8CD;
+                font-weight: bold;
+                margin: 10px;
+                border-radius: 10px;
+            }
+
+            /* .order-minus-5{
+                order: -5;
+            }
+
+            .order-1{
+                order: 1;
+            }
+
+            .order-10{
+                order: 10;
+            } */
+
+            /* .flex-grow-1{
+                flex-grow: 1;
+            }
+
+            .flex-grow-2{
+                flex-grow: 2;
+            } */
+
+            .flex-shrink-0 {
+                flex-shrink: 0;
+            }
+
+            .flex-shrink-2{
+                flex-shrink: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <div class="flex-container">
+            <div class="flex-item order-10">Flex item 1 (order: 10)</div>
+            <div class="flex-item order-1">Flex item 2 (order: 1)</div>
+            <div class="flex-item order-minus-5">Flex item 3 (order: -5)</div>
+            <div class="flex-item">Flex item 4 (order: 0 default)</div>
+        </div> -->
+
+        <!-- <div class="flex-container">
+            <div class="flex-item">Flex item 1</div>
+            <div class="flex-item flex-grow-2">Flex item 2</div>
+            <div class="flex-item flex-grow-1">Flex item 3</div> qolgan joy 150px => 100+50
+        </div> -->
+
+        <div class="flex-container">
+            <div class="flex-item flex-shrink-0">Flex item 1</div>
+            <div class="flex-item">Flex item 2</div>
+            <div class="flex-item flex-shrink-2">Flex item 3</div>
+            <div class="flex-item">Flex item 4</div>
+            <div class="flex-item">Flex item 5</div>
+            <div class="flex-item">Flex item 6</div>
+            <div class="flex-item">Flex item 7</div>
+            <div class="flex-item">Flex item 8</div>
+            <div class="flex-item flex-shrink-0">Flex item 9</div>
+
+        </div>
+    </body>
+</html>

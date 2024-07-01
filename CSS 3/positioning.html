@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Positioning</title>
+        <style>
+            /*
+            .box{
+                background-color: red;
+                height: 200px;
+                bottom: 30px;
+                left: 20px;
+                position: relative;
+            }
+
+            .link{
+                background-color: blue;
+                color: white;
+            }*/
+            /* Relative positioning 
+            .relative-box{
+                position: relative;
+                top: 20px;
+                left: 100px;
+                background-color: blue;
+                height: 100px;
+            
+            .box{
+                background-color: red;
+                height: 50px;
+            }}*/
+            /*Fixed positioning
+            
+            .fixed-box{
+                position: fixed;
+                top: 50px;
+                right: 0;
+                background-color: blue;
+                height: 100px;
+                width: 100%;
+            }*/
+
+            /*Absolute positioning
+            .relative-box{
+                position: relative;
+                width: 200px;
+                height: 200px;
+                border: 5px solid red;
+            }
+
+            .absolute-box{
+                position: absolute;
+                top: 10px;
+                right: 20px;
+                width: 50px;
+                height: 100px;
+                border: 5px solid blue;
+            } */
+            
+            /* Sticky positioning
+            .sticky-box{
+                position: sticky;
+                top: 10px;
+                width: 200px;
+                height: 200px;
+                border: 5px solid red;
+            }
+
+            .high-box{
+                height: 10000px;
+                border: 5px solid blue;
+            } */
+
+            /* Z-index
+            .box-1{
+                position: relative;
+                height: 200px;
+                background-color: red;
+                z-index: 2;
+            }
+
+            .box-2{
+                position: relative;
+                top: -100px;
+                z-index: 3;
+                height: 100px;
+                background-color: blue;
+            } */
+            .box{
+                background-color: blue;
+                border: 1px solid red;
+                width: 200px;
+                height: 100px;
+                /*overflow: hidden;
+                overflow: auto;*/
+                overflow-y: scroll;
+                overflow-x: scroll;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <a href="#" class="link">Ilova 1</a>
+        <a href="#" class="link">Ilova 2</a> -->
+        <!--Relative positioning
+        <div class="relative-box">Relative qiymatga ega box</div>
+        <div class="box">Oddiy quti(shundoq ham static qiymatga ega bo'ladi)</div> -->
+        <!--Fixed positioning
+        <div class="fixed-box">Fixed qiymatga ega box</div> -->
+
+        <!--Absolute positioning       
+        <div class="relative-box">Bu qutimiz static qiymatdan boshqa qiymatga ega
+            <div class="absolute-box">Bu qutimiz absolute qiymatga ega</div> 
+        </div> -->
+
+        <!-- Sticky positioning
+        <h1>Sticky qiymatga misol</h1>
+        <div class="sticky-box">Sticky qiymatiga ega quti</div>
+        <div class="high-box">Katta balandlikka ega quti</div> -->
+
+        <!-- Z-index 
+        <div class="box-1">
+            Box 1
+        </div>
+        <div class="box-2">
+            Box 2
+        </div> -->
+
+        <!-- Overflow -->
+        <div class="box">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever sinceremainingremainingremainingremaining the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
+            but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 
+            Letraset sheets containing Lorem Ipsum passages, 
+            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+    </body>
+</html>

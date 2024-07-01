@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Units - rem</title>
+        <style>
+            .parent-box{
+                font-size: 1.5rem; /* 1.5 * 16 = 24px */
+            }
+
+            .child-box{
+                font-size: 2rem; /* 2 * 16 = 32px */
+            }
+
+            .box{
+                height: 600px;
+                width: 1000px;
+                border: 1px solid red;
+                font-size: 1rem; /*<-- bunga ahamiyat berilmaydi*/
+                border-radius: 0.5rem; /* 0.5*16px = 8px*/
+                padding: 5rem;
+            }
+
+            html{
+                font-size: 20px;
+            }
+
+            .container{
+                padding: 0.5rem;
+                border: 1px solid red;
+            }
+
+            .container h2{
+                font-size: 1.5rem;
+                margin-bottom: 0.2rem;
+            }
+
+            .container h6{
+                font-size: 0.9rem;
+                margin-top: 0.2rem;
+            }
+
+            .container p{
+                font-size: 0.8rem;
+            }
+
+            .container span{
+                font-size: 10px;
+            }
+        </style>
+    </head>
+    <body> <!--
+        <div class="box">html elementimiz font-size xossasiga ega bo'lganda</div>-->
+
+        <!--
+        <div class="parent-box">
+            <div class="child-box">
+                <div class="box">Elementlarimiz nested joylashganda</div>
+            </div>
+        </div>-->
+
+        <div class="container">
+            <h2>Sarlavhamiz</h2>
+            <h6>Sarlavha osti</h6>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <span>
+                A simple text
+            </span>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+/* Backround repeat 
+.box{
+    height: 1000px;
+    background-image: url("../images/image.jpg");
+    color: white;
+    background-repeat: no-repeat;
+} */
+
+/* Backround size 
+.box{
+    height: 1000px;
+    background-image: url("../images/image.jpg");
+    color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 200px ;
+}*/
+
+/* Backround position 
+.box{
+    height: 1000px;
+    background-image: url("../images/image.jpg");
+    color: blue;
+    background-repeat: no-repeat;
+    /*background-position: left center;
+    background-position: 300px 150px;
+    border: 5px solid red;
+}*/

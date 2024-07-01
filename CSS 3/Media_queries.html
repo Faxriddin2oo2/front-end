@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Media queries</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .box{
+                width: 500px;
+                height: 400px;
+                background-color: red;
+            }
+
+            /* media so'rovlar asosiy styledan keyin kelishi kerak*/
+
+            /* 600pxdan boshlab */
+            @media only screen and (min-width: 600px) {
+                .box{
+                    background-color: green;
+                }
+            }
+
+            /* 900pxdan boshlab */
+            @media only screen and (min-width: 900px){
+                .box{
+                    background-color: blue;
+                }
+            }
+
+            .box2{
+                width: 500px;
+                height: 400px;
+                background-color: red;
+            }
+
+            /* 900pxgacha */
+            @media only screen and (max-width: 900px) {
+                .box2{
+                    background-color: blue;
+                }
+            }
+
+            /* 600pxgacha */
+            @media only screen and (max-width: 600px) {
+                .box2{
+                    background-color: green;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+        <div class="box">
+            600pxgacha qizil, 900pxgacha yashil va undan katta o'lchamlarda
+            ko'k rangga kiruvchi quti
+        </div> -->
+
+        <div class="box2">
+            600pxgacha yashil, 900pxgacha ko'k va undan katta o'lchamlarda
+            qizil rangga kiruvchi quti
+        </div>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>3D</title>
+        <style>
+            /* rotate 3D */
+             .parent-box{
+                width: 500px;
+                height: 500px;
+                border: 5px solid blue;
+            }
+
+            /* .box{
+                width: 100%;
+                height: 100%;
+                background-color: red;
+                transform: perspective(1000px) rotate3d(1, 2, -1, 30deg);
+            } */
+
+            /* 3d translate 
+            .box2{
+                width: 500px;
+                height: 500px;
+                background-color: red;
+                transform: perspective(100px) translate3d(10px, 20px, -30px);
+            } */
+            
+            .box3{
+                width: 100%;
+                height: 100%;
+                background-color: red;
+                transform-origin: left top;
+                transform: scale3d(2,3,4);
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <div class="parent-box">
+            <div class="box">X o'qi bo'yicha 10, Y o'qi bo'yicha 20 va Z bo'yicha 30 darajaga aylantirish</div>
+        </div> -->
+
+        <!-- <div class="box2">X o'qi bo'yicha 10px, Y o'qi bo'yicha 20px va Z bo'yicha 30pxga siljitish</div> -->
+        <div class="parent-box">
+            <div class="box3"> X o'qi bo'yicha 2, Y o'qi bo'yicha 3, Z o'qi bo'yicha 4 baravarga oshadi</div>
+        </div>
+    </body>
+</html>

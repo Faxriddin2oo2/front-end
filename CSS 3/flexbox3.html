@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex-item 2 </title>
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+
+            .flex-container{
+                display: flex;
+                /* flex-direction: column; */
+                height: 400px;
+                padding: 20px;
+                background-color: #025955;
+                border-radius: 10px;
+                align-items: flex-start;
+            }
+
+            .flex-item{
+                padding: 60px 15px;
+                background-color: #FDE8CD;
+                font-weight: bold;
+                margin: 10px;
+                border-radius: 10px;
+            }
+
+            /* .flex-basis-300{
+                flex-basis: 300px;
+            }
+
+            .flex-item-2{
+                flex: 0 0 400px;
+            } */
+
+            .align-end{
+                align-self: flex-end;
+            }
+
+            .align-start{
+                align-self: stretch;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="flex-item align-end">Flex item 1</div>
+            <div class="flex-item flex-basis-300">Flex item 2</div>
+            <div class="flex-item flex-item-2 align-start">Flex item 3</div>
+        </div>
+    </body>
+</html>
