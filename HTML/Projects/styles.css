@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    margin: 20px;
+    max-width: 600px;
+}
+
+/* Base CSS */
+.headers {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.fields {
+    font-size: .75em;
+    display: flex;
+    gap: 10px;
+    color:#464d5f
+}
+
+.input_group {
+    position: relative;
+    width: 100%;
+}
+
+.required {
+    color: red;
+}
+
+
+/* Full name */
+
+
+
+
+/* Body info */
+.twoFormInput {
+width: 275px;
+}
+
+
+/* Address */
+.address {
+    font-size: .75em;
+    gap: 10px;
+    color:#464d5f
+}
+
+
+
+
+/* Contact info */
+.form-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+.form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+.phone-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+.phone-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+  }
+  
+small {
+    color: #666;
+    font-size: 12px;
+  }
+  

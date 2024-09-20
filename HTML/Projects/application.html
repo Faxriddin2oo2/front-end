@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Application</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+            <h1>Job Application</h1>
+            <p>Please complete the form below to apply for a position with us</p><br><hr>
+
+            <!-- Full name -->
+            <form>
+                <label for="fullName" class="headers">Full name <span class="required">*</span></label>
+                <div class="fields">
+                    <div class="input_group">
+                        <input type="text" name="firstName" id="firstName" required > 
+                        <label for="firstName">First name</label>
+                    </div>
+                    <div class="input_group">
+                        <input type="text" name="middleName" id="middleName" >
+                        <label for="middleName">Middle name</label>
+                    </div>                
+                    <div class="input_group">
+                        <input type="text" name="lastName" id="lastName" required>
+                        <label for="lastName">Last name</label>
+                    </div>
+                </div>
+            </form>
+            <!-- /Full name -->
+
+            <!-- Body size -->
+            <form>
+                <label for="bodySize" class="headers">Body Size <span class="required">*</span></label>
+                <div>
+                    <div class="fields">
+                        <div class="input_group">
+                            <input type="text" name="height" class="twoFormInput" required placeholder="sm">
+                            <label for="height">Height</label>
+                        </div>
+                        <div class="input_group">
+                            <input type="text" name="weight" class="twoFormInput" required placeholder="kg">
+                            <label for="weight">Weight</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <!-- /Body size -->
+
+
+            <!-- Birth Date -->
+            <form>
+                <label for="birthDate" class="headers">Birth Date</label>
+                    <div class="fields">
+                        <div class="input_group">
+                            <input type="month" name="month" style="width: 180px;">
+                            <label for="month">Month</label>
+                        </div>
+                        <div class="input_group">
+                            <input type="text" name="day">
+                            <label for="day">Day</label>
+                        </div>
+                        <div class="input_group">
+                            <input type="text" name="year">
+                            <label for="year">Year</label>
+                        </div>
+                    </div>
+            </form>
+            <!-- /Birth Date -->
+
+
+            <!-- Family Status -->
+            <form>
+                <label class="headers">Family Status</label>
+                <input type="radio" id="divorced" name="familyStatus" value="Divorced">
+                <label for="divorced">Divorced</label><br>
+                <input type="radio" id="married" name="familyStatus" value="Married">
+                <label for="married">Married</label><br>
+                <input type="radio" id="single" name="familyStatus" value="Single">
+                <label for="single">Single</label><br>
+                <input type="radio" id="other" name="familyStatus" value="Other">
+                <label for="other">Other</label>
+                <span>
+                    <input type="text" name="familyStatus" id="other" data-otherhint="" placeholder="Please type another option here">
+                </span>
+            </form>
+            <!-- /Family Status -->
+
+
+            <!-- Address -->
+            <form>
+                <label class="headers">Current Address</label>
+                <div class="input_group" >
+                    <div  class="address">
+                        <input type="text" name="street_address" style="width: 580px;">
+                        <label for="street_address">Street Address</label>
+                    </div><br>
+                    <div  class="address">
+                        <input type="text" name="street_address" style="width: 580px;">
+                        <label for="street_address">Street Address Line 2</label>
+                    </div><br>
+                    <div class="fields">
+                        <div class="input_group">
+                            <input type="text" name="city" class="twoFormInput">
+                            <label for="city">City</label>
+                        </div>
+                        <div class="input_group">
+                            <input type="state" name="state"class=" twoFormInput">
+                            <label for="state">State / Province</label>
+                        </div>
+                    </div><br>
+                    <div  class="address">
+                        <input type="text" name="postal_code" style="width: 580px;">
+                        <label for="postal_code">Postal / Zip Code</label>
+                    </div>
+                </div>
+            </form>
+            <!-- /Address -->
+
+
+            <!-- Contact info -->
+            <form>
+                <div class="form-container">
+                    <div class="form-group">
+                    <label for="email" class="headers">Email Address</label>
+                    <input type="email" id="email" placeholder="ex: myname@example.com" class="twoFormInput">
+                    <small>example@example.com</small>
+                    </div>
+                    <div>
+                    <label for="phone" class="headers">Phone Number</label>
+                    <div class="phone-container">
+                        <input type="text" placeholder="90" style="width: 70px;">
+                        <input type="text" placeholder="9000909" style="width: 190px;">
+                    </div>
+                    <div class="phone-labels">
+                        <small>Area Code</small>
+                        <small>Phone Number</small>
+                    </div>
+                    </div>
+                </div>
+            </form>
+            <!-- /Contact info -->
+
+
+            <!-- LinkedIn and Experience -->
+            <form>
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="linkedIn" class="headers">LinkedIn</label>
+                        <input type="text" name="linkedIn" id="linkedIn" class="twoFormInput">
+                    </div>
+                    <div class="form-group">
+                        <label for="experience" class="headers">Experience</label>
+                        <input type="text" name="experience" id="experience" class="twoFormInput">
+                    </div>
+                </div>
+            </form><hr>
+            <!-- /LinkedIn and Experience -->
+            
+
+            <!-- Position, feedback and start date -->
+            <form>
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="position" class="headers">Position Applied</label>
+                        <select name="position" id="position" class="twoFormInput">
+                            <option value>Please Select</option>
+                            <option value="position">Backend Developer</option>
+                            <option value="position">Frontend Developer</option>
+                            <option value="position">Data analytic</option>
+                            <option value="position">Project manager</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="about_us" class="headers">How did you hear about us</label>
+                        <select name="about_us" id="about_us" class="twoFormInput">
+                            <option value>Please Select</option>
+                            <option value="LinkedIn">LinkedIn</option>
+                            <option value="HeadHunter">HeadHunter</option>
+                            <option value="Social_media">Social Media</option>
+                            <option value="Company_website">Company website</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+
+            <form>
+                <label for="start_date" class="headers">Avialable Start Date</label>
+                <input type="date" name="start_date" id="start_date" class="twoFormInput">
+            </form>
+            <!-- /Position, feedback and start date -->
+
+
+            <!-- Computer and English Skills -->
+            <form>
+                <label for="computer_skills" class="headers">Computer Skills</label>
+                <table class="skills-table">
+                <thead>
+                    <tr>
+                    <th></th>
+                    <th>Beginner</th>
+                    <th>Elementary</th>
+                    <th>Advanced</th>
+                    <th>Expert</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Excel</td>
+                        <td><input type="radio" name="excel" value="beginner"></td>
+                        <td><input type="radio" name="excel" value="elementary"></td>
+                        <td><input type="radio" name="excel" value="advanced"></td>
+                        <td><input type="radio" name="excel" value="expert"></td>
+                    </tr>
+                    <tr>
+                        <td>Word</td>
+                        <td><input type="radio" name="word" value="beginner"></td>
+                        <td><input type="radio" name="word" value="elementary"></td>
+                        <td><input type="radio" name="word" value="advanced"></td>
+                        <td><input type="radio" name="word" value="expert"></td>
+                    </tr>
+                    <tr>
+                        <td>1C</td>
+                        <td><input type="radio" name="1c" value="beginner"></td>
+                        <td><input type="radio" name="1c" value="elementary"></td>
+                        <td><input type="radio" name="1c" value="advanced"></td>
+                        <td><input type="radio" name="1c" value="expert"></td>
+                    </tr>
+                    <tr>
+                        <td>Programming language</td>
+                        <td><input type="radio" name="programming_language" value="beginner"></td>
+                        <td><input type="radio" name="programming_language" value="elementary"></td>
+                        <td><input type="radio" name="programming_language" value="advanced"></td>
+                        <td><input type="radio" name="programming_language" value="expert"></td>
+                    </tr>
+                </tbody>
+                </table>
+            </form><br>
+
+            <form>
+                <label for="english" class="headers">Ability knowing English Language</label><br>
+                <tbody>
+                    <tr>
+                        <td><input type="radio" name="english" value="1">1</td>
+                        <td><input type="radio" name="english" value="2">2</td>
+                        <td><input type="radio" name="english" value="3">3</td>
+                        <td><input type="radio" name="english" value="4">4</td>
+                        <td><input type="radio" name="english" value="5">5</td>
+                    </tr>
+                </tbody>
+            </form>
+            <!-- /Computer and English Skills  -->
+
+
+            <!-- Files -->
+            <form>
+                <label for="document" class="headers">Applicant Document(Dipoma, Certificate)</label>
+                <input type="file" name="document">
+            </form>
+
+            <form>
+                <label for="resume" class="headers">Upload Your Resume</label>
+                <input type="file" name="resume" id="resume">
+            </form>
+
+            <form>
+                <label for="letter" class="headers">Cover Letter</label>
+                <textarea name="letter" id="letter" style="width: 600px; height: 200px;"></textarea>
+            </form><hr>
+            <!-- /Files -->
+
+            <div>
+                <button type="button" style="cursor: pointer;">Apply</button>        
+            </div>
+
+
+    </body>
+</html>
