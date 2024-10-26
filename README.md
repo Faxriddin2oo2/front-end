@@ -1,2 +1,2 @@
 # front-end
-Bu yerda Front endni o'rganish jarayonida bajarilgan vazifalar bo'ladi
+There are files from when I study front end: HTML, CSS, JavaScript
